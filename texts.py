@@ -2,10 +2,16 @@ presentation = {
   "WELCOME": "Welcome to my presentation about pandas.",
   "FUNFACT": "[FUN FACT]: Did you know that pandas is actually an abbreviation of 'panel data' + 'data analysis'?",
   "panda_img": 'https://i.pinimg.com/736x/10/8f/e6/108fe697d63e9f0f69744d3d59f2dd57.jpg',
-  "OUTLINE": " - pandas pivot\n - numpy where\n - python sharp corners (if time allows) \n -\t mutable defaults\n -\t variable scope in list comprehension\n -\t integer identity quirk\n -\t tuple assignment and mutable obejcts\n -\t shallow copies of mutable objects",
+  "OUTLINE": " - pandas pivot\n - numpy where\n - python sharp corners (if time allows) \n -\t mutable defaults\n -\t variable scope in list comprehension\n -\t integer identity quirk\n -\t tuple assignment and mutable objects",
   "PIVOT": "Pivot\n 'the central point, pin, or shaft on which a mechanism turns or oscillates.' \t~ Oxford Languages",
   "pivot_gif": "https://media.tenor.com/VGowjXpojsYAAAAM/rubiks-cube-gif.gif",
   "WHERE": "Where\n 'in or to what place or position.' \t~ Oxford Languages",
   "where_gif": "https://media.tenor.com/PXOXwsJKbSYAAAAM/where-you.gif",
-  "MUTABLE_DEFAULTS": "The default value is evaluated only once, when the function is defined, and not each time the function is called."
+  "MUTABLE_DEFAULTS": "Mutable defaults",
+  "MUTABLE_DEFAULTS_EXP": "The default value is evaluated only once, when the function is defined, and not each time the function is called.",
+  "VARIABLE_SCOPE": "Variable Scope in List Comprehension",
+  "VARIABLE_SCOPE_EXP": "List comprehensions have their own scope. This means that variables created inside a list comprehension are not available outside of it.",
+  "INTEGER_IDENTITY": "Integer Identity Quirk",
+  "INTEGER_IDENTITY_EXP": "Python caches small integers, which means that they are the same object in memory. This can lead to unexpected behavior.",
+  "TUPLE_ASSIGNMENT": "Tuple Assignment and Mutable Objects\n If you’re familiar with built-in data structures in Python, you know that tuples are immutable. So you cannot modify them in place. Data structures like lists and dictionaries, on the other hand, are mutable. Meaning you can change them in place. \n But what about tuples that contain one or more mutable objects?",
 }

@@ -120,7 +120,7 @@ df['adult'] = np.where(df['age'] >= 18)
 df
 
 # COMMAND ----------
-df['adult'] = np.where(df['age'] >= 18, 1, 0)
+df['adult'] = np.where(df['age'] >= 18, True, False)
 df
 # COMMAND ----------
 df['age_group'] = np.where(df['age'] >= 18, 'adult', 'minor')
@@ -146,4 +146,62 @@ def add_to_cart(item, cart=None):
         cart = []
     cart.append(item)
     return cart
+
+# COMMAND ----------
+printt(presentation["MUTABLE_DEFAULTS_EXP"])
+# COMMAND ----------
+printt(presentation["VARIABLE_SCOPE"])
+# COMMAND ----------
+x = 10
+squares = []
+for x in range(5):
+    squares.append(x ** 2)
+
+printt(f"Squares list: {squares}")  
+printt("What is x after the loop?")
+
+# COMMAND ----------
+printt(f"x after for loop: {x}")
+# COMMAND ----------
+x = 10
+squares = [x ** 2 for x in range(5)]
+
+printt(f"Squares list: {squares}")  
+printt("What is x after the loop?")
+
+
+# COMMAND ----------
+printt(f"x after list comprehension: {x}")
+
+# COMMAND ----------
+printt(presentation["VARIABLE_SCOPE_EXP"])
+
+# COMMAND ----------
+printt(presentation["INTEGER_IDENTITY"])
+
+# COMMAND ----------
+a = 42
+b = 42
+
+print(f" a == b \t {a == b}")
+print(f" a is b \t {a is b}")
+# COMMAND ----------
+x = 1337
+y = 1337
+
+print(f" x == y \t {x == y}")
+print(f" x is y \t {x is y}")
+# COMMAND ----------
+printt(presentation["INTEGER_IDENTITY_EXP"])
+# COMMAND ----------
+printt(presentation["TUPLE_ASSIGNMENT"])
+
+# COMMAND ----------
+my_tuple = ([1,2],3,4)
+my_tuple[0].append(3)
+my_tuple
+# COMMAND ----------
+my_tuple[0] += [4,5]
+# COMMAND ----------
+my_tuple
 # COMMAND ----------
